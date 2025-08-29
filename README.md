@@ -31,10 +31,9 @@ The following optional features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='[https://drive.google.com/file/d/19fOcT1ur0LX2TNZG8vzicP_vsCk_BAag/view?usp=drive_link]' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://drive.google.com/uc?export=view&id=19fOcT1ur0LX2TNZG8vzicP_vsCk_BAag' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with [GameBar]
-
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app:
