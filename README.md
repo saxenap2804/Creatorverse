@@ -31,7 +31,8 @@ The following optional features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='[https://drive.google.com/file/d/19fOcT1ur0LX2TNZG8vzicP_vsCk_BAag/view?usp=drive_link]' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='[[https://drive.google.com/file/d/19fOcT1ur0LX2TNZG8vzicP_vsCk_BAag/view?usp=drive_link](https://drive.google.com/file/d/19fOcT1ur0LX2TNZG8vzicP_vsCk_BAag/view?usp=drive_link)]' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='[]' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [GameBar]
 
