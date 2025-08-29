@@ -1,38 +1,201 @@
+/* Creatorverse Styling with Picocss */
 .App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Header Styling */
+h1 {
   text-align: center;
+  color: #2563eb;
+  margin-bottom: 2rem;
+  font-size: 3rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Creators Grid Layout */
+.creators-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Creator Card Styling */
+.creator-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: fit-content;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.creator-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.creator-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #1e293b;
+  font-size: 1.5rem;
+}
+
+.creator-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.creator-card p {
+  color: #64748b;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Button Container */
+.card-buttons {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 0.5rem;
+}
+
+.card-buttons a,
+.card-buttons button {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.card-buttons a {
+  background: #059669;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-buttons a:hover {
+  background: #047857;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card-buttons button {
+  background: #3b82f6;
+  color: white;
+}
+
+.card-buttons button:hover {
+  background: #2563eb;
+}
+
+/* Form Styling */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+  margin-bottom: 1rem;
+}
+
+form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Add Creator Button */
+.add-creator-btn {
+  display: block;
+  margin: 0 auto 2rem auto;
+  background: #10b981;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.add-creator-btn:hover {
+  background: #059669;
+}
+
+/* View Creator Page */
+.view-creator {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.view-creator img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 2rem auto;
+  display: block;
+}
+
+.view-creator-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Delete Button Styling */
+.delete-btn {
+  background: #dc2626 !important;
+}
+
+.delete-btn:hover {
+  background: #b91c1c !important;
+}
+
+/* No Creators Message */
+.no-creators {
+  text-align: center;
+  color: #64748b;
+  font-size: 1.2rem;
+  margin: 3rem 0;
+  padding: 2rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 2px dashed #cbd5e1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+    padding: 1rem 0.5rem;
   }
-  to {
-    transform: rotate(360deg);
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .creators-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .view-creator-buttons {
+    flex-direction: column;
   }
 }
